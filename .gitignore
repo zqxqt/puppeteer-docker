@@ -2,4 +2,4 @@ src/node_modules
 src/output
 src/tmp
 src/package-lock.json
-src/.env
+.env
