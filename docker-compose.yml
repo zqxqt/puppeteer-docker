@@ -1,0 +1,10 @@
+version: '3'
+services:
+  puppeteer:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./src/output:/app/src/output
+    env_file:
+      - .env
