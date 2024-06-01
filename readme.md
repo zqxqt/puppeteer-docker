@@ -57,4 +57,4 @@ The API provides an endpoint for generating screenshots of web pages.
 curl "http://localhost:3020/generate-screenshot?url=https://example.com&password=your_password&width=1280&height=800&fileName=screenshot"
  ```
 
-#Screenshots are located in src/output
+### Screenshots are located in src/output
