@@ -45,6 +45,9 @@ app.get('/generate-screenshot', async (req, res) => {
     return res.status(500).json({ error: 'Timeout waiting for page to load' });
   }
 
+  // Add a delay of 5 seconds
+  await page.waitForTimeout(5000);
+
   const screenshot = await page.screenshot({ fullPage: true, type: 'jpeg' });
 
   await browser.close();
